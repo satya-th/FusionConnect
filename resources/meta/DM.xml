@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'utf-8'?>
+<dataModel xmlns="http://xmlns.oracle.com/oxp/xmlp" version="2.0" xmlns:xdm="http://xmlns.oracle.com/oxp/xmlp" xmlns:xsd="http://wwww.w3.org/2001/XMLSchema" defaultDataSourceRef="demo">
+   <description>
+      <![CDATA[undefined]]>
+   </description>
+   <dataProperties>
+      <property name="include_parameters" value="false"/>
+      <property name="include_null_Element" value="false"/>
+      <property name="include_rowsettag" value="false"/>
+      <property name="exclude_tags_for_lob" value="false"/>
+      <property name="xml_tag_case" value="upper"/>
+      <property name="generate_output_format" value="xml"/>
+      <property name="sql_monitor_report_generated" value="false"/>
+      <property name="optimize_query_executions" value="false"/>
+   </dataProperties>
+   <dataSets>
+      <dataSet name="sqlResultsSet" type="simple">
+         <sql dataSourceRef="ApplicationDB_HCM" nsQuery="true" sp="true" xmlRowTagName="" bindMultiValueAsCommaSepStr="false">
+            <![CDATA[DECLARE
+       type sys_refcursor is REF CURSOR;
+       xdo_cursor  sys_refcursor;
+	   l_InQuery varchar2(32000);
+    BEGIN
+      l_InQuery := :p_query;
+      OPEN :xdo_cursor FOR utl_raw.cast_to_varchar2(utl_encode.base64_decode(UTL_RAW.CAST_TO_RAW(l_InQuery)));
+    END;]]>
+         </sql>
+      </dataSet>
+   </dataSets>
+   <output rootName="DATA_DS" uniqueRowName="false">
+      <nodeList name="sqlResultsSet"/>
+   </output>
+   <eventTriggers/>
+   <lexicals/>
+   <parameters>
+      <parameter name="p_query" dataType="xsd:string" rowPlacement="1">
+         <input label="p_query"/>
+      </parameter>
+      <parameter name="xdo_cursor" dataType="xsd:string" rowPlacement="1">
+         <input label="xdo_cursor"/>
+      </parameter>
+   </parameters>
+   <valueSets/>
+   <bursting/>
+   <validations>
+      <validation>N</validation>
+   </validations>
+   <display>
+      <layouts>
+         <layout name="sqlResultsSet" left="284px" top="406px"/>
+         <layout name="DATA_DS" left="0px" top="35px"/>
+      </layouts>
+      <groupLinks/>
+   </display>
+</dataModel>
