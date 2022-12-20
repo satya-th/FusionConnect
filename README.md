@@ -11,7 +11,7 @@ Welcome to Fusion Connect, this is a desktop graphical user interface to run SQL
     - Access to real time data through secure webservice calls
     - provided ability to analyze the data by exporting into html,CSV and excel formats
     - Can handle multiple sessions and can run concurently
-    - Provides ability to maintain multiple connections
+    - Provides ability to maintain multiple connections and sessions.
     - Platform independednt, works with both mac and windows
     
     ![Sql-Session](https://user-images.githubusercontent.com/60496276/208556840-357a39a6-c55c-4a6f-a816-a6261da191c7.PNG)
