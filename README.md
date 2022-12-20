@@ -38,7 +38,8 @@ Welcome to Fusion Connect, this is a desktop graphical user interface to run SQL
 
     ![DB_browser](https://user-images.githubusercontent.com/60496276/208556695-31c6b982-b2ab-4b24-a6b3-c3dd691d64ba.PNG)
     
-    ###DB Browser
+    ### DB Browser
+    
     ![DB_browser_script](https://user-images.githubusercontent.com/60496276/208557049-ab6724e9-e925-4053-9f72-bfbc1f8e1c46.PNG)
     
  4. API Manager:
