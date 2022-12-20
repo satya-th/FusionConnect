@@ -19,6 +19,7 @@ Welcome to Fusion Connect, this is a desktop graphical user interface to run SQL
     ### Create Connection
     ![fc_new_connection](https://user-images.githubusercontent.com/60496276/208557197-5d7f9c33-8722-4fbc-ae11-8e6e8012ba7b.PNG)
 
+---
 
  2. SQL Job Manager: 
     - Execut long running SQLs as Jobs.
@@ -28,7 +29,8 @@ Welcome to Fusion Connect, this is a desktop graphical user interface to run SQL
     - Can handle multiple sessions and can run concurently
 
     ![Sql_job_manager](https://user-images.githubusercontent.com/60496276/208556647-15927531-ba36-4804-a338-911ef6e5900b.PNG)
-    
+ ---
+ 
  3. DB Object Browser: 
     - Creates holistic view of DB objects
     - Lets you describe for detailsed information.
@@ -41,7 +43,8 @@ Welcome to Fusion Connect, this is a desktop graphical user interface to run SQL
     ### DB Browser
     
     ![DB_browser_script](https://user-images.githubusercontent.com/60496276/208557049-ab6724e9-e925-4053-9f72-bfbc1f8e1c46.PNG)
-    
+ ---
+ 
  4. API Manager:
     - Generated API Catalog for a given Cloud ERP Enviornment.
     - Provides consolidated view of all available Webservices, REST APIs and Business events. 
